@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat::100,200,300,400,500,600,700,800,900');
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  background-color: #1c1c1b;
+  letter-spacing: -1px;
+}
+
+/*================================== Header*/
+
+.navbar .navbar-brand {
+  /*margin-left: 25px;*/
+  /*margin-top: 25px;*/
+  /*margin-bottom: 25px;*/
+ 
+  background-color: #030303;
+  width: 130px;
+  height: 130px;
+
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -1px;
+  color: #ff6262;
+}
+
+.navbar{
+  display:block;
+}
+.navbar-toggler{
+  position: absolute;
+    right: 10px;
+}
