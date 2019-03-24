@@ -5,89 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <title>Gnotek</title>
 </head>
 
-<!--<nav class="navbar navbar-default navbar-fixed-top"></nav>-->
-
 <body>
-    <div class="container">
-        <!--<header>-->
-        <div class="row no-gutters">
+    <header>
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-sm-4" id="nav-wrapper">
 
-            <div class="col-sm-3 bg-grey">
-
-            </div>
-
-            <div class="col-sm-9 bg-purple">
-
-            </div>
-            <div class="col-sm-9 offset-2 bg-yellow">
-                <div class="col-sm-3" id="nav">
-                    <div class="row">
-                        <div class="col-sm-10 col-lg-10">
-                            <div class="logo">Gnotek</div>
+                    <div class="col-sm-9" id="nav">
+                        <div class="row">
+                            <div class="col-sm-10 col-lg-10 offset-1">
+                                <div class="logo">Gnotek</div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-10 col-lg-10">
-                            <ul id="menu" class="list-group menucontainer">
-                                <a href="#">
-                                    <li class="list-group-item text-uppercase menuitem">
-                                        <span>About</span>
-                                    </li>
-                                </a>
-                                <a href="#">
-                                    <li class="list-group-item text-uppercase menuitem">
-                                        <span>Muzik</span>
-                                    </li>
-                                </a>
-                                <a href="#">
-                                    <li class="list-group-item text-uppercase menuitem">
-                                        <span>Contact</span>
-                                    </li>
-                                </a>
-                                <a href="#">
-                                    <li class="list-group-item text-uppercase menuitem">
-                                        <span>Tour</span>
-                                    </li>
-                                </a>
-                                <a href="#">
-                                    <li class="list-group-item text-uppercase menuitem">
-                                        <span>Photos</span>
-                                    </li>
-                                </a>
-                                <a href="#">
-                                    <li class="list-group-item text-uppercase menuitem">
-                                        <span>&nbsp</span>
-                                    </li>
-                                </a>
-                                <a href="#">
-                                    <li class="list-group-item text-uppercase menuitem">
-                                        <span>&nbsp</span>
-                                    </li>
-                                </a>
-                            </ul>
+
+                        <div class="row">
+                            <div class="col-sm-10 col-lg-10  offset-1">
+                                <!-- List group -->
+                                <div class="list-group d-none d-sm-block menucontainer" role="tablist">
+                                    <a class="list-group-item list-group-item-action text-uppercase hvr-sweep-to-right menuitem" data-toggle="list" href="#home" role="tab">Home</a>
+                                    <a class="list-group-item list-group-item-action text-uppercase hvr-sweep-to-right menuitem" data-toggle="list" href="#profile" role="tab">Muzik</a>
+                                    <a class="list-group-item list-group-item-action text-uppercase hvr-sweep-to-right menuitem" data-toggle="list" href="#messages" role="tab">Tour</a>
+                                    <a class="list-group-item list-group-item-action text-uppercase hvr-sweep-to-right menuitem" data-toggle="list" href="#settings" role="tab">About</a>
+                                    <a class="list-group-item list-group-item-action text-uppercase hvr-sweep-to-right menuitem" data-toggle="list" href="#settings" role="tab">Contact</a>
+                                    <a class="list-group-item list-group-item-action text-uppercase hvr-sweep-to-left menuitem" data-toggle="list" role="tab">&nbsp</a>
+                                    <a class="list-group-item list-group-item-action text-uppercase hvr-sweep-to-left menuitem" data-toggle="list" role="tab">&nbsp</a>
+                                    <a class="list-group-item list-group-item-action text-uppercase hvr-sweep-to-left menuitem" data-toggle="list" role="tab">&nbsp</a>
+                                </div>
+                            </div>
+
                         </div>
+
                     </div>
+
                 </div>
 
+                <section class="container">
+                    <div class="row no-gutters">
+                             <div class="col-sm-7 offset-3 purple-pane"></div>
+                    </row>
+          
+                </section>
+
+                <section class="container">
+                    <div class="row no-gutters">
+                             <div class="col-sm-3 offset-9 blue-pane"></div>
+                    </row>
+          
+                </section>
+
+
+                <!-- Tab panes -->
+                <!--<div class="tab-content">-->
+                <!--    <div class="tab-pane active" id="home" role="tabpanel">...</div>-->
+                <!--    <div class="tab-pane" id="profile" role="tabpanel">...</div>-->
+                <!--    <div class="tab-pane" id="messages" role="tabpanel">...</div>-->
+                <!--    <div class="tab-pane" id="settings" role="tabpanel">...</div>-->
+                <!--</div>-->
+
             </div>
 
+
         </div>
+    </header>
 
-
-        <!--</header>-->
-
-
-
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 
