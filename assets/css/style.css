@@ -3,113 +3,214 @@
 body {
   font-family: Montserrat, sans-serif;
   font-weight: 900;
+  font-size: 16px;
   background-color: #1c1c1b;
+  letter-spacing: -1px;
+
+  /*background-image: url('../media/city00.jpg');*/
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-/*================================== Header*/
+/*.parallax-window {}*/
 
-#nav-wrapper {
+.parallax-window  {
+  min-height: 1000px;
+    background: transparent;
+  /*height: 100vh;*/
+  /*min-height: 800px;*/
+  /*background: transparent;*/
+
+
+  /*background: url('../media/city00.jpg') no-repeat;*/
+  /*-webkit-background-size: cover;*/
+  /*-moz-background-size: cover;*/
+  /*-o-background-size: cover;*/
+  /*background-size: cover;*/
+}
+
+.opaque-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*================================== Navigation*/
+
+header {
+  float: right;
+  margin-right: 189px;
+}
+
+
+.navbar {
   position: fixed;
-  background-color: #ff6262;
-  padding: 0 auto;
-  margin: 0 auto;
-  height: 80%;
-  top: 10%;
+  top: 0px;
+  display: block;
+  z-index: 3;
+  background-color: #ff6262 !important;
+  max-width: 200px;
 }
 
-#nav {
-  /*position: fixed;*/
-  /*margin-top: 80px;*/
-  /*width: 100%;*/
-  padding: 0;
-  background-color: #ff6262;
+.navbar-light .navbar-nav .nav-link {
+  max-width: 84%;
 }
 
-.logo {
-  /*margin-left: 25px;*/
-  margin-top: 25px;
-  margin-bottom: 25px;
+.navbar .navbar-brand {
+  text-align: right;
+  padding-top: 90px;
+  padding-right: 3px;
+}
+
+.navbar .navbar-brand {
+  margin-top: 10px;
+  margin-bottom: 15px;
   background-color: #030303;
-  width: 130px;
-  height: 130px;
+  width: 125px;
+  height: 125px;
 
-  font-size: 24px;
+  font-size: 1.563em;
   font-style: italic;
   font-weight: 400;
   letter-spacing: -1px;
   color: #ff6262;
 }
 
-.menucontainer {
-  /*width:100%;*/
+.navbar .navbar-brand:link {
+  background-color: #030303;
+  color: #ff6262;
 }
 
-.menuitem {
+.navbar .navbar-nav .nav-item {
+  margin-right: 0px;
+  width: 200px;
+  font-size: 1.25em;
 
+}
+
+.navbar-light .navbar-nav .nav-link {
   display: block;
-  /*margin-left: 25px;*/
+  padding: 0px 0px 0px 5px;
+  color: #030303;
+  border: 4px solid #030303;
+  margin-top: 4px;
+  margin-bottom: 4px;
   background-color: #ff6262;
-  border: 4px solid #000;
-  padding: 0;
-  font-size: 22px;
-  letter-spacing: -1px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
   color: #030303;
 }
 
-.list-group-item,
-.list-group-item:first-child,
-.list-group-item:last-child {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+.navbar-light .navbar-nav .nav-link:focus {
+  color: #ff6262;
+  border: 4px solid #030303;
   margin-top: 4px;
   margin-bottom: 4px;
+  background-color: #030303
 }
 
-.list-group-item.active {
-  z-index: 2;
-  background-color: #000;
-  color: #ff6262;
-  border-color: #000;
-}
-
-.list-group-item:hover {
-  background-color: #ff6262;
-  color: #000;
-}
 
 .hvr-sweep-to-right:before {
   background: rgba(0, 0, 0, 0.2);
+  color: #030303;
+}
+
+.navbar-light .navbar-toggler {
+  margin-top: -10px;
+  color: #030303;
+  /*color: rgba(0,0,0,.5);*/
+  border: 0;
+}
+
+
+/*-------------------------------------------------------general settings*/
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/*-----------------------------------------------------JumboTron */
+
+.jumbotron {
+  color: #fff;
+  height: 100vh;
+  margin-bottom: 2rem;
+  /*2rem*/
+  background-color: transparent;
+}
+
+
+/*--------------------------------------------------------About page*/
+
+#about {
   color: #000;
-}
-
-.hvr-sweep-to-left:before {
-  background-color: #ff6262;
-}
-
-/*--------------------------------- purple-pane*/
-
-.purple-pane {
-  position: absolute;
-  right: 50px;
-  margin: 0 auto;
-  padding: 0 auto;
+  background-color: rgba(251, 245, 120, 0.9);
+  /*background-color: #fbf578;*/
   height: 100vh;
-  display: inline-block;
-  background-color: #600472;
-  z-index: -1;
 }
 
-/*--------------------------------- blue-pane*/
+/*--------------------------------------------------------Muzik page*/
 
-.blue-pane {
-  position: absolute;
-  right: 50px;
-  margin: 0 auto;
-  padding: 0 auto;
-  height: 100vh;
-  display: inline-block;
+#muzik {
+  color: #000;
   background-color: #005995;
-  z-index: -1;
+  height: 100vh;
+}
+
+/*--------------------------------------------------------Tour page*/
+
+#tour {
+  color: #000;
+  background-color: #600472;
+  height: 100vh;
+}
+
+/*--------------------------------------------------------Kontact page*/
+
+#kontact {
+  color: #000;
+  background-color: #47c299;
+  height: 100vh;
+}
+
+/*-------------------------------------Media Queries*/
+
+@media(max-width: 575px) {
+
+  header {
+    float: none;
+    margin: 0px;
+  }
+
+  .navbar {
+    top: 0px;
+    padding-right: 0px;
+    padding-left: 10px;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    width: 140px;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-toggler-icon {
+    margin-left: -10px;
+    background-size: 125% 125%;
+  }
+  .navbar-light .navbar-nav .nav-link.disabled {
+    display: none;
+  }
 }
