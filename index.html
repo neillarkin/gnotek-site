@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.00, minimum-scale=1.00, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
@@ -39,6 +40,11 @@
                                 molestias nihil assumenda quod suscipit, perspiciatis placeat repellat doloremque veniam. Repudiandae, incidunt. Mollitia in numquam similique sequi, impedit reprehenderit quidem repudiandae cumque explicabo, atque ipsam
                                 dolores expedita nemo. Quos nobis nostrum iste quibusdam dolorum maiores, veniam commodi atque aliquid assumenda ex ut, delectus, cupiditate aut rerum minus nesciunt excepturi aliquam aperiam. Unde cum fugiat quasi, voluptatum
                                 atque, quae quaerat excepturi veritatis expedita tempore at ad ab consequatur nihil sit nam blanditiis repellat. Sequi ipsum fugiat in, nisi magni libero tempore tempora?</p>
+                            <hr class="my-4">
+                            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                            <p class="lead">
+                                <a class="btn btn-primary btn-lg d-none d-sm-inline-block" href="#about" role="button">Read more</a>
+                            </p>
                         </div>
                     </section>
                 </div>
@@ -60,7 +66,7 @@
 
                                 <ul class="navbar-nav mr-auto flex-column">
                                     <li class="nav-item ">
-                                        <a class="nav-link text-uppercase hvr-sweep-to-right" role="navigation" href="#about"><span>About</span></a>
+                                        <a class="nav-link text-uppercase hvr-sweep-to-right about-page" role="navigation" href="#about"><span>About</span></a>
                                     </li>
                                     <li class="nav-item ">
                                         <a class="nav-link text-uppercase hvr-sweep-to-right" role="navigation" href="#muzik"><span>Muzik</span></a>
@@ -141,51 +147,84 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/parallax.min.js"></script>
-    <!--https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_scrollspy_animate&stacked=h-->
+
 
     <script>
-    
+        // Each navbar button gets highlighted after click
         $("a.nav-link").click(function() {
-                    $("a.nav-link").css({
-                             "background-color": "#ff6262", 
-                             "color": "#030303", 
-                        });
-                        $(this).css({
-                              "background-color": "#030303", 
-                             "color": "#ff6262", 
-                            });
+            $("a.nav-link").css({
+                "background-color": "#ff6262",
+                "color": "#030303",
+            });
+            $(this).css({
+                "background-color": "#030303",
+                "color": "#ff6262",
+            });
+        });
 
+
+
+
+        //Scroll feature for 'one page' websites. Tekn from W3Schools https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+
+        $(document).ready(function() {
+            // Add scrollspy to <body>
+            $('body').scrollspy({ target: ".navbar", offset: 50 });
+
+            // Add smooth scrolling on all links inside the navbar
+            $("#navSmoothScroll a").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
                     });
+                } // End if
+            });
+        });
 
+        $(document).ready(function() {
+            // Add scrollspy to <body>
+            $('body').scrollspy({ target: ".btn", offset: 50 });
 
+            // Add smooth scrolling on all links inside the navbar
+            $("#landing-page a").on('click', function(event) {
 
+                $("a.about-page").css({
+                    "background-color": "#030303",
+                    "color": "#ff6262",
+                })
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
-                $(document).ready(function() {
-                    // Add scrollspy to <body>
-                    $('body').scrollspy({ target: ".navbar", offset: 50 });
+                    // Store hash
+                    var hash = this.hash;
 
-                    // Add smooth scrolling on all links inside the navbar
-                    $("#navSmoothScroll a").on('click', function(event) {
-                        // Make sure this.hash has a value before overriding default behavior
-                        if (this.hash !== "") {
-                            // Prevent default anchor click behavior
-                            event.preventDefault();
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
 
-                            // Store hash
-                            var hash = this.hash;
-
-                            // Using jQuery's animate() method to add smooth page scroll
-                            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                            $('html, body').animate({
-                                scrollTop: $(hash).offset().top
-                            }, 800, function() {
-
-                                // Add hash (#) to URL when done scrolling (default click behavior)
-                                window.location.hash = hash;
-                            });
-                        } // End if
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
                     });
-                });
+                } // End if
+            });
+        });
     </script>
 </body>
 
