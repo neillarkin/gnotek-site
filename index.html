@@ -17,7 +17,7 @@
     <!--<div class="parallax-window" data-parallax="scroll" data-image-src="/path/to/image.jpg"></div>-->
 
     <section class="container-fluid">
-        <div class="parallax-window" data-parallax="scroll" data-image-src="assets/media/city00.jpg">
+        <div class="parallax-main" data-parallax="scroll" data-z-index="-2" data-image-src="">
             <!--<div class="opaque-overlay">&nbsp;</div>-->
 
             <div class="row no-gutters">
@@ -57,8 +57,8 @@
                     <header>
                         <!--<div class="container nav-wrapper">-->
 
-                        <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top" id="navSmoothScroll">
-                            <a class="navbar-brand" href="#landing-page"><span><i class="fab fa-bity fa-4x"></i></span></a>
+                        <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top dropdown-menu-right" id="navSmoothScroll">
+                            <a class="navbar-brand d-none d-sm-inline-block" href="#landing-page"><span><i class="fab fa-bity fa-4x"></i></span></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
                                                 <span class="navbar-toggler-icon"></span>
                                         </button>
@@ -100,35 +100,96 @@
                 </div>
                 <div class="col-sm-8 col-md-9">
                     <!--------------------------------------------------------------------------------------------------------------------------About-->
-                    <section id="about">
-                        <h1>About Page</h1>
+                    <section class="container container-fluid" id="about">
+
+                        <h1>&nbsp;</h1>
+
+                        <div class="parallax-about float-left img-responsive" data-parallax="scroll" data-z-index="1" data-image-src="assets/media/figure.jpg"></div>
+
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptatibus in reiciendis ab quos facilis repudiandae mollitia officiis. Ratione, corrupti delectus autem saepe laboriosam totam omnis, incidunt magnam soluta iste.
                             Nisi molestias esse optio tempore magni, laudantium accusantium omnis voluptatum? Omnis labore beatae asperiores assumenda numquam sequi voluptates cupiditate minus.
                         </p>
                     </section>
                     <!--------------------------------------------------------------------------------------------------------------------------Muzik-->
-                    <section id="muzik">
-                        <h1>Muzik Page</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptatibus in reiciendis ab quos facilis repudiandae mollitia officiis. Ratione, corrupti delectus autem saepe laboriosam totam omnis, incidunt magnam soluta iste.
-                            Nisi molestias esse optio tempore magni, laudantium accusantium omnis voluptatum? Omnis labore beatae asperiores assumenda numquam sequi voluptates cupiditate minus.
-                        </p>
+                    <section class="container container-fluid" id="muzik">
+                        <!--<div class="container ">-->
+                        <div class="row">
+                            <div class="col">
+                                <div class="box float-left"></div>
+                                <div class="box-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, esse.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="box float-left"></div>
+                                <div class="box-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, esse.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col">
+                                <div class="box float-left"></div>
+                                <div class="box-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, esse.</p>
+                                </div>
+                            </div>
+                        </div>
                     </section>
                     <!--------------------------------------------------------------------------------------------------------------------------tour-->
-                    <section id="tour">
-                        <h1>Tour dates</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptatibus in reiciendis ab quos facilis repudiandae mollitia officiis. Ratione, corrupti delectus autem saepe laboriosam totam omnis, incidunt magnam soluta iste.
-                            Nisi molestias esse optio tempore magni, laudantium accusantium omnis voluptatum? Omnis labore beatae asperiores assumenda numquam sequi voluptates cupiditate minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Asperiores maiores quam, rem nihil soluta, facere repellat iusto, atque quisquam eos eum voluptatem. Incidunt, dolor iste unde sit magnam, officiis, iusto placeat fuga eos adipisci accusamus neque deserunt. Ab ipsam repellendus
-                            non, eligendi unde quia ducimus quas accusamus quasi id. Hic accusamus, architecto cum, odit animi maiores similique reiciendis enim sunt aut nostrum tenetur atque. Rerum nesciunt distinctio nam praesentium aliquid optio, sunt,
-                            iure hic magnam nihil saepe sint odio ipsum natus dolores deleniti. Nihil vero dolore doloremque fuga consequuntur in. Dolorem et veritatis deleniti expedita, necessitatibus sequi maxime iure culpa!
-                        </p>
+                    <section class="container container-fluid" id="tour">
+                        <h1>Tour Dates</h1>
+                        <div class="container">
+                            <p>Upcoming European events... </p>
+                            <table class="table table-dark table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Firstname</th>
+                                        <th>Lastname</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>John</td>
+                                        <td>Doe</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mary</td>
+                                        <td>Moe</td>
+                                    </tr>
+                                    <tr>
+                                        <td>July</td>
+                                        <td>Dooley</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br>
+                            <p> Below is a clip fro mone of my recent gigs in xxxx </p>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0jA1yejNY3g" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
                     </section>
                     <!--------------------------------------------------------------------------------------------------------------------------kontact-->
-                    <section id="kontact">
-                        <h1>Kontact Us</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam voluptatibus in reiciendis ab quos facilis repudiandae mollitia officiis. Ratione, corrupti delectus autem saepe laboriosam totam omnis, incidunt magnam soluta iste.
-                            Nisi molestias esse optio tempore magni, laudantium accusantium omnis voluptatum? Omnis labore beatae asperiores assumenda numquam sequi voluptates cupiditate minus.
-                        </p>
+                    <section class="container container-fluid" id="kontact">
+                            <div class="row">
+                                <div>
+                                    <h3 class="contact-heading uppercase text-center">Book me for events</h3>
+                                    <h5 class="uppercase text-center">Let's work together</h5>
+                                </div>
+                                <div class="center-form">
+                                    <form>
+                                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                                        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                                        <!--<textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>-->
+                                        <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+                                    </form>
+                                </div>
+                            </div>
                     </section>
                 </div>
             </div>
@@ -147,6 +208,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/parallax.min.js"></script>
+
+
+
+
+    <script>
+        //     $('.parallax-window').parallax({
+        //     naturalWidth: 600,
+        //     naturalHeight: 400
+        // });
+    </script>
+
 
 
     <script>

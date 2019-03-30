@@ -13,10 +13,14 @@ body {
 }
 
 /*.parallax-window {}*/
-
-.parallax-window {
+.parallax-main {
+  
   min-height: 1000px;
   background: transparent;
+
+  
+  /*background-size: cover;*/
+  
   /*height: 100vh;*/
   /*min-height: 800px;*/
   /*background: transparent;*/
@@ -24,8 +28,18 @@ body {
   /*-webkit-background-size: cover;*/
   /*-moz-background-size: cover;*/
   /*-o-background-size: cover;*/
-  /*background-size: cover;*/
+  
 }
+
+.parallax-about{
+  min-height: 650px;
+  /*height: 650px;*/
+  width: 400px;
+  background: transparent;
+  }
+
+
+
 
 .opaque-overlay {
   position: absolute;
@@ -73,8 +87,8 @@ header {
 }
 
 .navbar .navbar-brand:link {
-  /*background-color: #030303;*/
-  /*color: #ff6262;*/
+  background-color: #030303;
+  color: #ff6262;
 }
 
 .navbar .navbar-nav .nav-item {
@@ -120,7 +134,7 @@ header {
 }
 
 .navbar-light .navbar-toggler {
-  margin-top: -10px;
+  /*margin-top: -10px;*/
   color: #030303;
   /*color: rgba(0,0,0,.5);*/
   border: 0;
@@ -169,6 +183,7 @@ p {
 
 .jumbotron {
   color: #fff;
+  min-height: 100vh;
   /*height: 100vh;*/
   margin-bottom: 2rem;
   /*2rem*/
@@ -193,7 +208,7 @@ my-4 {
   color: #000;
   background-color: rgba(251, 245, 120, 0.9);
   /*background-color: #fbf578;*/
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 15px;
 }
 
@@ -202,16 +217,28 @@ my-4 {
 #muzik {
   color: #000;
   background-color: #005995;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 15px;
 }
 
+.box{
+/*position: relative;*/
+/*    float: left;*/
+  background-color: #fff;
+  width:200px;
+  height:200px;
+  padding:0;
+  margin:50px 40px 50px 40px;
+}
+.box-text{
+  margin-top:50px;
+}
 /*--------------------------------------------------------Tour page*/
 
 #tour {
   color: #000;
   background-color: #600472;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 15px;
 }
 
@@ -220,9 +247,23 @@ my-4 {
 #kontact {
   color: #000;
   background-color: #47c299;
-  height: 100vh;
+  min-height: 100vh;
   margin-left: 15px;
 }
+
+.contact-heading {
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+
 
 /*-------------------------------------Media Queries*/
 
@@ -231,7 +272,7 @@ my-4 {
   header {
     float: none;
     margin: 0px;
-    height:auto;
+    height: auto;
   }
 
   .navbar {
@@ -239,6 +280,7 @@ my-4 {
     top: 0px;
     padding-right: 0px;
     padding-left: 10px;
+    margin-right: 15px;
   }
 
   .navbar .navbar-nav .nav-item {
@@ -246,7 +288,7 @@ my-4 {
   }
 
   .navbar-brand {
-    display: none;
+    /*display: none;*/
   }
   .navbar-toggler-icon {
     margin-left: -10px;
@@ -263,18 +305,40 @@ my-4 {
   }
 
 
-.jumbotron{
+  .jumbotron {
     /*height: auto;*/
-}
-.jumbotron.btn-primary{
-  /*display:hidden;*/
-}
+  }
+
+  .btn-group-lg>.btn,
+  .btn-lg {
+    border-radius: 0;
+  }
+
+
+  .jumbotron.btn.btn-primary.btn-lg {
+    border-radius: 0;
+  }
   #about,
   #muzik,
   #tour,
   #kontact {
     margin-left: 0px;
   }
+  
+.parallax-about{
+  height: 50%;
+  width: 100%;
+  background: transparent;
+  }
 
+
+}
+
+
+@media(min-width: 1200px) {
+  .jumbotron {
+    float: left;
+  }
+  
 
 }
