@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat::100,200,300,400,500,600,700,800,900');
 
 body {
+  zoom: 100%;
+
+  /*transform-origin: top left;*/
+  /*transform: scale(.97);*/
   font-family: Montserrat, sans-serif;
   font-weight: 900;
   font-size: 16px;
@@ -13,14 +17,14 @@ body {
 }
 
 /*.parallax-window {}*/
+
 .parallax-main {
-  
+
   min-height: 1000px;
   background: transparent;
 
-  
+
   /*background-size: cover;*/
-  
   /*height: 100vh;*/
   /*min-height: 800px;*/
   /*background: transparent;*/
@@ -28,15 +32,19 @@ body {
   /*-webkit-background-size: cover;*/
   /*-moz-background-size: cover;*/
   /*-o-background-size: cover;*/
-  
 }
 
-.parallax-about{
+.parallax-about {
+
+  /*white-space: nowrap;*/
+  /*-webkit-background-size: cover;*/
+  /*-moz-background-size: cover;*/
+  /*-o-background-size: cover;*/
   min-height: 650px;
   /*height: 650px;*/
   width: 400px;
   background: transparent;
-  }
+}
 
 
 
@@ -221,18 +229,38 @@ my-4 {
   margin-left: 15px;
 }
 
-.box{
-/*position: relative;*/
-/*    float: left;*/
-  background-color: #fff;
-  width:200px;
-  height:200px;
-  padding:0;
-  margin:50px 40px 50px 40px;
+
+
+
+.box {
+
+  /*position: relative;*/
+  /*display: block;*/
+  /*    float: left;*/
+  /*background-color: #fff;*/
+  /*width:200px;*/
+  /*height:200px;*/
 }
-.box-text{
-  margin-top:50px;
+
+#muzik img {
+
+  width: 100%;
+  max-width: 300px;
+  padding: 0;
+  margin: 00px 0px 10px 20px;
 }
+
+#muzik audio{
+  margin-bottom:80px;
+}
+
+.media-text {
+  /*display: inline-block;*/
+  /*display: block;*/
+  /*position: relative;*/
+  /*margin-top: 50px 0px 0px 40px;*/
+}
+
 /*--------------------------------------------------------Tour page*/
 
 #tour {
@@ -252,15 +280,15 @@ my-4 {
 }
 
 .contact-heading {
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 20px;
+  font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 .center-form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 70%;
+  padding-top: 10px;
+  margin: 0 auto;
+  max-width: 70%;
 }
 
 
@@ -324,14 +352,29 @@ my-4 {
   #kontact {
     margin-left: 0px;
   }
-  
-.parallax-about{
-  height: 50%;
-  width: 100%;
-  background: transparent;
+
+  .parallax-about {
+    height: 50%;
+    width: 100%;
+    background: transparent;
+  }
+
+  #muzik p {
+    margin: 0px 0px 10px 20px;
+  }
+  #muzik audio,
+  h3 {
+    margin-left: 20px;
   }
 
 
+}
+
+@media(min-width: 992px) {
+  #muzik img{
+  margin-bottom:30px;
+}
+  
 }
 
 
@@ -339,6 +382,8 @@ my-4 {
   .jumbotron {
     float: left;
   }
-  
+#muzik img{
+  margin-bottom:100px;
+}
 
 }
