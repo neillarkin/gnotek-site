@@ -210,6 +210,14 @@ my-4 {
 
 
 
+
+#about, #muzik, #tour, #kontact{
+  
+  float: left;
+  margin-bottom:20px;
+  margin-left:20px;
+}
+
 /*--------------------------------------------------------About page*/
 
 #about {
@@ -217,7 +225,7 @@ my-4 {
   background-color: rgba(251, 245, 120, 0.9);
   /*background-color: #fbf578;*/
   min-height: 100vh;
-  margin-left: 15px;
+  /*margin-left: 15px;*/
 }
 
 /*--------------------------------------------------------Muzik page*/
@@ -226,7 +234,7 @@ my-4 {
   color: #000;
   background-color: #005995;
   min-height: 100vh;
-  margin-left: 15px;
+  /*margin-left: 15px;*/
 }
 
 
@@ -247,7 +255,7 @@ my-4 {
   width: 100%;
   max-width: 300px;
   padding: 0;
-  margin: 00px 0px 10px 20px;
+  margin: 00px 0px 10px 15px;
 }
 
 #muzik audio{
@@ -267,7 +275,7 @@ my-4 {
   color: #000;
   background-color: #600472;
   min-height: 100vh;
-  margin-left: 15px;
+  /*margin-left: 15px;*/
 }
 
 /*--------------------------------------------------------Kontact page*/
@@ -276,7 +284,7 @@ my-4 {
   color: #000;
   background-color: #47c299;
   min-height: 100vh;
-  margin-left: 15px;
+  /*margin-left: 15px;*/
 }
 
 .contact-heading {
@@ -360,11 +368,11 @@ my-4 {
   }
 
   #muzik p {
-    margin: 0px 0px 10px 20px;
+    margin: 0px 0px 10px 15px;
   }
   #muzik audio,
   h3 {
-    margin-left: 20px;
+    margin-left: 15px;
   }
 
 
