@@ -8,6 +8,7 @@ body {
   font-family: Montserrat, sans-serif;
   font-weight: 900;
   font-size: 16px;
+
   background-color: #1c1c1b;
   letter-spacing: -1px;
 
@@ -15,6 +16,40 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
+#about,
+#muzik,
+#tour,
+#kontact {
+
+  float: left;
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h1,
+h3,
+h4,
+h5,
+p {
+  color: #fff;
+}
+
+p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+
+/*------------------------------------------------------------------Parallax settins*/
 
 /*.parallax-window {}*/
 
@@ -46,23 +81,40 @@ body {
   background: transparent;
 }
 
+.parallax-kontact {
+  min-height: 650px;
+  /*487.5px;*/
 
+  width:100%;
+  /*400px;*/
+  /*310px;*/
+ 
+  background: transparent;
+}
 
 
 .opaque-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 105%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron-overlay {
+   background-color: rgba(0, 0, 0, 0.5);
+   padding:20px;
+   border-radius: 10px;
+   /*border: solid 1px #fff;*/
+   
 }
 
 /*================================== Navigation*/
 
 header {
   float: right;
-  height: 400vh;
+  height: 500vh;
   /*margin-right: 189px;*/
 }
 
@@ -151,20 +203,6 @@ header {
 
 /*-------------------------------------------------------general settings*/
 
-h1 {
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.2;
-}
-
-p {
-  font-size: 1.25rem;
-  font-weight: 300;
-}
-
-
-
-
 /*-----------------------------------------------------Landing Page - Jumbotron */
 
 .logo i {
@@ -211,12 +249,7 @@ my-4 {
 
 
 
-#about, #muzik, #tour, #kontact{
-  
-  float: left;
-  margin-bottom:20px;
-  margin-left:20px;
-}
+
 
 /*--------------------------------------------------------About page*/
 
@@ -251,15 +284,18 @@ my-4 {
 }
 
 #muzik img {
-
   width: 100%;
   max-width: 300px;
   padding: 0;
-  margin: 00px 0px 10px 15px;
+  margin: 40px 0px 10px 15px;
 }
 
-#muzik audio{
-  margin-bottom:80px;
+#muzik .media-text {
+  margin-top: 40px;
+}
+
+#muzik audio {
+  margin-bottom: 60px;
 }
 
 .media-text {
@@ -278,28 +314,45 @@ my-4 {
   /*margin-left: 15px;*/
 }
 
+.tour-video {
+  margin-bottom: 30px;
+}
+
+table {
+  font-weight: normal;
+  letter-spacing: 0px;
+  /*border: 1px solid #fff;*/
+  box-shadow: 3px 3px 3px #999;
+}
+
 /*--------------------------------------------------------Kontact page*/
 
 #kontact {
   color: #000;
-  background-color: #47c299;
-  min-height: 100vh;
+  background-color: transparent; 
+  /*#47c299;*/
+  /*#9ecc94;*/
+
+  min-height: 65vh;
   /*margin-left: 15px;*/
 }
 
-.contact-heading {
-  font-weight: 300;
-  margin-top: 25px;
-  margin-bottom: 20px;
+label{
+  color:#fff;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+form{
+  min-width:200px;
 }
 
-.center-form {
-  padding-top: 10px;
-  margin: 0 auto;
-  max-width: 70%;
+form{
+  padding:40px 0px 0px 40px;
 }
-
-
+.social{
+  padding:40px 0px 0px 40px;
+  margin:40px 0px 0px 20px;
+}
 
 /*-------------------------------------Media Queries*/
 
@@ -354,11 +407,16 @@ my-4 {
   .jumbotron.btn.btn-primary.btn-lg {
     border-radius: 0;
   }
+
   #about,
   #muzik,
   #tour,
   #kontact {
     margin-left: 0px;
+  }
+
+  .tour-video {
+    margin-bottom: 20px;
   }
 
   .parallax-about {
@@ -367,22 +425,26 @@ my-4 {
     background: transparent;
   }
 
+#muzik img{
+  margin-bottom: 0px;
+}
   #muzik p {
     margin: 0px 0px 10px 15px;
   }
-  #muzik audio,
-  h3 {
-    margin-left: 15px;
+
+  #muzik audio {
+    margin-bottom: 70px;
   }
-
-
+ #muzik .media-text{
+   margin-left: 15px;
+ }
 }
 
 @media(min-width: 992px) {
-  #muzik img{
-  margin-bottom:30px;
-}
-  
+  #muzik img {
+    margin-bottom: 30px;
+  }
+
 }
 
 
@@ -390,8 +452,9 @@ my-4 {
   .jumbotron {
     float: left;
   }
-#muzik img{
-  margin-bottom:100px;
-}
+  #muzik img {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 
 }
