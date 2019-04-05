@@ -51,7 +51,18 @@ p {
 
 /*------------------------------------------------------------------Parallax settins*/
 
-/*.parallax-window {}*/
+.myshadow {
+  /*border: 1px solid #fff;*/
+  /*background-color: #fff;*/
+  /*z-index:15;*/
+  /*width:200px;*/
+  /*height:200px;*/
+  /*box-shadow:*/
+  /*  55px 55px 0 #FF9800,*/
+  /*  110px 110px 0 #FFC107,*/
+  /*  165px 165px 0 #607D8B;*/
+}
+
 
 .parallax-main {
 
@@ -79,18 +90,21 @@ p {
   /*height: 650px;*/
   width: 400px;
   background: transparent;
+  /*border:4px solid #607D8B;*/
+      /*border: 2px solid rgb(25, 243, 180);*/
+}
+.parallax-mirror .parallax-about{
+      /*border: 4px solid rgb(25, 243, 180);*/
 }
 
 .parallax-kontact {
- /*margin-left:30px;*/
+  /*margin-left:30px;*/
   min-height: 650px;
-  max-width:95%;
+  max-width: 95%;
   /*487.5px;*/
-
-  width:100%;
+  width: 100%;
   /*400px;*/
   /*310px;*/
- 
   background: transparent;
 }
 
@@ -101,7 +115,7 @@ p {
   left: 0;
   height: 105%;
   width: 100%;
- 
+
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -123,6 +137,16 @@ header {
   z-index: 3;
   background-color: #ff6262 !important;
   max-width: 200px;
+  box-shadow: 
+  -12.5px 12.5px 0 #FF9800,
+  -27.5px 27.5px 0 #FFC107,
+  -41.25px 41.25px 0 #607D8B;
+
+
+  /*-25px -25px 0 #FF9800,*/
+  /*-55px -55px 0 #FFC107,*/
+  /*-82.5px -82.5px 0 #607D8B;*/
+
 }
 
 .navbar .navbar-brand {
@@ -244,11 +268,10 @@ my-4 {
 }
 
 .jumbotron-overlay {
-   background-color: rgba(0, 0, 0, 0.5);
-   padding:20px;
-   border-radius: 10px;
-   /*border: solid 1px #fff;*/
-   
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  /*border: solid 1px #fff;*/
 }
 
 
@@ -263,6 +286,13 @@ my-4 {
   /*background-color: #fbf578;*/
   min-height: 100vh;
   /*margin-left: 15px;*/
+}
+
+#about p {
+  /* box-shadow:*/
+  /*55px 55px 0 #FF9800,*/
+  /*110px 110px 0 #FFC107,*/
+  /*165px 165px 0 #607D8B;*/
 }
 
 /*--------------------------------------------------------Muzik page*/
@@ -339,37 +369,40 @@ table {
   /*background-color: transparent; */
   /*#47c299;*/
   /*#9ecc94;*/
-
   min-height: 65vh;
   /*margin-left: 15px;*/
 }
+
 #kontact h4 {
   font-weight: normal;
-  min-width:350px;
+  min-width: 350px;
 }
-label{
-  color:#fff;
+
+label {
+  color: #fff;
   font-weight: 400;
   letter-spacing: 0px;
 }
-form{
-  min-width:250px;
-}
 
-form{
-  padding:40px 0px 0px 40px;
-}
-.social{
+form {
   min-width: 250px;
-  padding:40px 0px 0px 40px;
-  margin:40px 0px 0px 00px;
+}
+
+form {
+  padding: 40px 0px 0px 40px;
+}
+
+.social {
+  min-width: 250px;
+  padding: 40px 0px 0px 40px;
+  margin: 40px 0px 0px 00px;
 }
 
 
-footer{
-  color:#fff;
-   letter-spacing: 0px;
-    background-color: rgba(0, 0, 0, 0.5);
+footer {
+  color: #fff;
+  letter-spacing: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -444,9 +477,9 @@ footer{
     background: transparent;
   }
 
-#muzik img{
-  margin-bottom: 0px;
-}
+  #muzik img {
+    margin-bottom: 0px;
+  }
   #muzik p {
     margin: 0px 0px 10px 15px;
   }
@@ -454,14 +487,14 @@ footer{
   #muzik audio {
     margin-bottom: 70px;
   }
- #muzik .media-text{
-   margin-left: 15px;
- }
- 
- .parallax-kontact {
- max-width:100%;
-}
- 
+  #muzik .media-text {
+    margin-left: 15px;
+  }
+
+  .parallax-kontact {
+    max-width: 100%;
+  }
+
 }
 
 @media(min-width: 992px) {
@@ -481,8 +514,8 @@ footer{
     margin-bottom: 50px;
   }
 
-.parallax-kontact {
- margin-left:30px;
+  .parallax-kontact {
+    margin-left: 30px;
 
-}
+  }
 }
