@@ -1,22 +1,72 @@
+# Milestone Project 1 – User Centric Development.
+# Gnotek Mock Artist Website
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+## Overview
+This project presents a mock website for a fictitious electronic music artist named Gntoek. 
+The site is built using the Boostrap 4 grid system, JQuery and Parallax frameworks. 
+The website is intended to be added to my portfolio website as a demonstration of my knowledge of those frame works as well as CSS3 and HTML5.
+
+The website is currently hosted on GitHub Pages and is available here: https://neillarkin.github.io/gnotek-site/
+
+## UX Design
+The site is intended to look like that of a creative artistic type by having unusual colours and font type. 
+A positive user experience is maintained by designing a simple site to be a one scrolling page of five sections; Landing, About, Music, Tour dates table and a Contact form. 
+Each section is accessible by scrolling or via a floating navigation bar. The functional goal of the site is to be a central location where fans can access all of the artists work, social channels, tour dates and newsletters.
+
+## Technologies
+HTML5, CSS3, Bootstrap 4 JQuery, Parallax and Hover.
+
+## Use case scenarios
+A fan of the artist can get the information about who the artist is, download their music, read the latest tour dates and subscribe to the newsletter. 
+There is also links to official social media platforms. The web site is will give the audience an overall sense and feel of what the artist is about and what style of music they create.
+Puchasing music – functionality could be developed to allow users to purchase music from the artist by redirecting users to other music content services such as Bandcamp or Soundcloud.
+
+## Testing
+Testing was carried out on the latest versions of Chrome, Firefox and Edge. Responsive Android and iOS testing was performed on Chrome, Firefox, FireFox Focus and Safari.
+The site was developed with a mobile to desktop approach where changes and feature additions were  constantly viewed and tested on both mobile and screen sizes. This approach helped discover any potential design issues early on. 
+For example the navigation bar logo had to become hidden on mobile view.
+
+### Bugs and  Performance issues
+#### Zoom:
+Zoom and decreasing the browsers' horiztonal window size, cause layout misalignments.
+#### Loading:
+the background image is quite large and so degrades performance when loading on slow connections.
+#### Parallax:
+Parallax scrolling appears to jitter slightly on FireFox and Safari. This is a known issue with Parallax and there are some workarounds that could be implemented in future version of this site.
+
+#### Navigation bar:
+1) Clicking a menu item will scroll to that section. If the user then scrolls to another section; the highlighted menu item will not reflect that new section. This could be rectified perhaps by implementing some JavaScript or JQuery to tie the ‘div id’ to the menu items CSS attribute.
+2) In mobile mode, the navigation bar collapses to a hamburger menu. When expanded the   three horizontal lines move to the left rather than staying aligned right. According to Bootstrap documentation, the menu positions itself left or right depending on where the ‘navbar-brand’  element is placed;  before or after the "<button>" elements. Placing elements correctly did not rectify the issue.
+3) Each menu items background colour changes to #000 once selected. This also happened on hover but was changed to a Hover.js effect because hovering to #000 near an item that was already #000 may confuse the user experience.
+
+####Contact form:
+The Contact form is present for cosmetic purposesnon and is non-functional.
+
+####Deployment
+The sites was built on the Cloud9 IDE with GitHub used to backup milestones in development. The latest version is hosted on GitHub Pages ans is available here.
+
+#### Credits and Sources
+
+##### Media:
+###### Images:
+The images play a major role on this website and so a colour scheme of ‘orange and teel’  and ‘dark city’ were used as search parameters when sourcing images. All images were sourced from Pexels and Pixabay from photographers Irina Iriser, Mudassir Ali, and Elti Meshau. 
+
+###### Album covers:
+Album covers were sourced from the Tresor and Warp Records websites.
+
+###### Music:
+Music was taken from Harold Faltermeyer, Boards of Canada and Vangelis.
+
+###### Video:
+The video was sourced from YouTube of a live performance of the artist Aphex Twin.
+
+##### Acknowledgements
+###### CSS:
+The box shadow on the navigation bar was created using CSSmatic and inspired from a CSSTricks article. https://css-tricks.com/books/volume-i/abusing-box-shadow-fun-visual-effects/ 
 
 
-Hi there! Welcome to Cloud9 IDE!
+###### JavaScript:
+The one page scroll code was sourced from W3Schools: https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
-
-Happy coding!
-The Cloud9 IDE team
-
-
-Testing:
-Responsiveness contantly tested throughout development
+The active menu items was sourced from Stackoverflow and edited to fit the site
+https://stackoverflow.com/questions/10646775/active-menu-highlight-css 
