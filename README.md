@@ -39,10 +39,10 @@ Parallax scrolling appears to jitter slightly on FireFox and Safari. This is a k
 2) In mobile mode, the navigation bar collapses to a hamburger menu. When expanded the   three horizontal lines move to the left rather than staying aligned right. According to Bootstrap documentation, the menu positions itself left or right depending on where the ‘navbar-brand’  element is placed;  before or after the "<button>" elements. Placing elements correctly did not rectify the issue.
 3) Each menu items background colour changes to #000 once selected. This also happened on hover but was changed to a Hover.js effect because hovering to #000 near an item that was already #000 may confuse the user experience.
 
-####Contact form:
+#### Contact form:
 The Contact form is present for cosmetic purposesnon and is non-functional.
 
-####Deployment
+#### Deployment
 The sites was built on the Cloud9 IDE with GitHub used to backup milestones in development. The latest version is hosted on GitHub Pages ans is available here.
 
 #### Credits and Sources

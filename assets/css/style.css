@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat::100,200,300,400,500,600,700,800,900');
 
+@import url('https://fonts.googleapis.com/css?family=Audiowide::100,200,300,400,500,600,700,800,900');
+
+
+
 body {
   zoom: 100%;
 
@@ -16,6 +20,17 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
+/* Block dividers */
+
+.section-divider {
+    width: 700px;
+    height: 1px;
+    border: 0;
+    background-color: #fff;
+    text-align: center;
+}
+
 
 #about,
 #muzik,
@@ -48,6 +63,10 @@ p {
   font-weight: 300;
 }
 
+.jumbotron h1{
+font-family: 'Audiowide', cursive, sans-serif;
+ font-size: 6em;
+}
 
 /*------------------------------------------------------------------Parallax settins*/
 
@@ -422,6 +441,11 @@ footer {
     padding-right: 0px;
     padding-left: 10px;
     margin-right: 15px;
+    
+     box-shadow: none;
+  /*0px 0px 0 transparent,*/
+  /*0px 0px 0 #FFC107,*/
+  /*0px 0px 0 #607D8B;*/
   }
 
   .navbar .navbar-nav .nav-item {
