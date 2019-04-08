@@ -47,7 +47,14 @@ The sites was built on the Cloud9 IDE with GitHub used to backup milestones in d
 
 #### Credits and Sources
 
-##### Media:
+##### Text
+The Landing Page blurb is taken from a Wikipedia entry on Dub Techno:
+https://en.wikipedia.org/wiki/Dub_techno
+
+The artist 'About' blurb is taken from Resident Advisors' biographical on Anders Ilar:
+https://www.residentadvisor.net/dj/andersilar/biography
+
+##### Media
 ###### Images:
 The images play a major role on this website and so a colour scheme of ‘orange and teel’  and ‘dark city’ were used as search parameters when sourcing images. All images were sourced from Pexels and Pixabay from photographers Irina Iriser, Mudassir Ali, and Elti Meshau. 
 
