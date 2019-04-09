@@ -470,10 +470,9 @@ footer {
     height: auto;
   }
 
-
-  .jumbotron {
-    /*height: auto;*/
-  }
+.jumbotron h1 {
+    font-size: 4em;
+ }
 
   .btn-group-lg>.btn,
   .btn-lg {
