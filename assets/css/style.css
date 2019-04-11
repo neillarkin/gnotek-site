@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Audiowide::100,200,300,400,500,600,700,800,900');
 
+/*@import url('https://fonts.googleapis.com/css?family=Frijole::100,200,300,400,500,600,700,800,900');*/
+
 
 
 body {
@@ -20,7 +22,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
-
+p strong { 
+  font-weight:600;
+}
 .navbar{
   letter-spacing: -1px;
 }
@@ -50,6 +54,7 @@ body {
 #muzik h1,
 #tour h1,
 #kontact h1{
+  /*font-family: 'Frijole', cursive;*/
     letter-spacing: -1px;
     font-weight:bold;
     
@@ -66,7 +71,7 @@ h3,
 h4,
 h5,
 p {
-  color: #fff;
+  color: #eceaea;
 }
 
 p {
