@@ -46,12 +46,13 @@ body {
   margin-left: 20px;
 }
 
-#about,
-#muzik,
-#tour,
+#about h1,
+#muzik h1,
+#tour h1,
 #kontact h1{
-    /*letter-spacing: -1px;*/
-    text-transform: capitalize;
+    letter-spacing: -1px;
+    font-weight:bold;
+    
 }
 
 h1 {
@@ -111,7 +112,7 @@ font-family: 'Audiowide', cursive, sans-serif;
 }
 
 .parallax-about {
-
+    margin-right: 10px;
   /*white-space: nowrap;*/
   /*-webkit-background-size: cover;*/
   /*-moz-background-size: cover;*/
@@ -507,6 +508,7 @@ footer {
   }
 
   .parallax-about {
+    margin-right: 0px;
     height: 50%;
     width: 100%;
     background: transparent;
