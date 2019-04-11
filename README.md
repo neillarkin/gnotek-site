@@ -28,7 +28,7 @@ For example the navigation bar logo had to become hidden on mobile view.
 
 ### Bugs and  Performance issues
 #### Zoom:
-Zoom and decreasing the browsers' horiztonal window size, cause layout misalignments.
+Zoom and decreasing the browsers' horiztonal window size, cause layout misalignments. FIXED!?!
 #### Loading:
 the background image is quite large and so degrades performance when loading on slow connections.
 #### Parallax:
