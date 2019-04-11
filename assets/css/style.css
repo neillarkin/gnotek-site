@@ -14,14 +14,18 @@ body {
   font-size: 16px;
 
   background-color: #1c1c1b;
-  letter-spacing: -1px;
+  
 
   /*background-image: url('../media/city00.jpg');*/
   background-attachment: fixed;
   background-size: cover;
 }
 
-/* Block dividers */
+.navbar{
+  letter-spacing: -1px;
+}
+
+/* section dividers */
 
 .section-divider {
     width: 700px;
@@ -40,8 +44,14 @@ body {
   float: left;
   /*margin-bottom: 20px;*/
   margin-left: 20px;
+}
 
-
+#about,
+#muzik,
+#tour,
+#kontact h1{
+    /*letter-spacing: -1px;*/
+    text-transform: capitalize;
 }
 
 h1 {
@@ -65,11 +75,11 @@ p {
 
 .jumbotron h1{
 font-family: 'Audiowide', cursive, sans-serif;
- font-size: 6em;
+ font-size: 5em;
  color:#84979e;
 }
 
-/*------------------------------------------------------------------Parallax settins*/
+/*------------------------------------------------------------------Parallax settings*/
 
 .myshadow {
   /*border: 1px solid #fff;*/
@@ -151,6 +161,7 @@ header {
 
 
 .navbar {
+  
   /*position: sticky;*/
   /*top: 0px;*/
   display: block;
