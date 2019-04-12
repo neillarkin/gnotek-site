@@ -202,12 +202,8 @@ header {
 
 .logo {
   margin-top: 4.5rem;
-  /*margin:4rem 2rem;*/
-  /*margin: 0;*/
   width: 170px;
   height: 170px;
-  /*border: solid 1px #84979e;*/
-  /*background-color: #030303;*/
   text-align: center;
 }
 
@@ -215,9 +211,7 @@ header {
 .jumbotron {
   color: #fff;
   min-height: 100vh;
-  /*height: 100vh;*/
   margin-bottom: 2rem;
-  /*2rem*/
   background-color: transparent;
 }
 
@@ -246,17 +240,7 @@ my-4 {
 #about {
   color: #000;
   background-color: rgba(0, 0, 0, 0.5);
-  /*background-color: rgba(251, 245, 120, 0.9);*/
-  /*background-color: #fbf578;*/
   min-height: 100vh;
-  /*margin-left: 15px;*/
-}
-
-#about p {
-  /* box-shadow:*/
-  /*55px 55px 0 #FF9800,*/
-  /*110px 110px 0 #FFC107,*/
-  /*165px 165px 0 #607D8B;*/
 }
 
 /*--------------------------------------------------------Muzik page*/
@@ -264,22 +248,7 @@ my-4 {
 #muzik {
   color: #000;
   background-color: rgba(0, 0, 0, 0.5);
-  /*background-color: #005995;*/
   min-height: 100vh;
-  /*margin-left: 15px;*/
-}
-
-
-
-
-.box {
-
-  /*position: relative;*/
-  /*display: block;*/
-  /*    float: left;*/
-  /*background-color: #fff;*/
-  /*width:200px;*/
-  /*height:200px;*/
 }
 
 #muzik img {
@@ -297,21 +266,12 @@ my-4 {
   margin-bottom: 60px;
 }
 
-.media-text {
-  /*display: inline-block;*/
-  /*display: block;*/
-  /*position: relative;*/
-  /*margin-top: 50px 0px 0px 40px;*/
-}
-
 /*--------------------------------------------------------Tour page*/
 
 #tour {
   color: #000;
   background-color: rgba(0, 0, 0, 0.5);
-  /*background-color: #600472;*/
   min-height: 100vh;
-  /*margin-left: 15px;*/
 }
 
 .tour-video {
@@ -321,7 +281,6 @@ my-4 {
 table {
   font-weight: normal;
   letter-spacing: 0px;
-  /*border: 1px solid #fff;*/
   box-shadow: 3px 3px 3px #999;
 }
 
@@ -330,9 +289,6 @@ table {
 #kontact {
   color: #000;
   background-color: rgba(0, 0, 0, 0.5);
-  /*background-color: transparent; */
-  /*#47c299;*/
-  /*#9ecc94;*/
   min-height: 65vh;
   padding-bottom: 30px;
 }
@@ -365,9 +321,7 @@ form {
 
 footer {
   text-align: center;
-
   letter-spacing: 0px;
-  /*background-color: rgba(0, 0, 0, 0.5);*/
 }
 
 footer p {
@@ -415,7 +369,6 @@ footer p {
   }
 
   .logo-wrapper {
-    /*position: absolute;*/
     float: left;
     height: auto;
   }
