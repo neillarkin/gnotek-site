@@ -19,7 +19,7 @@ HTML5, CSS3, Bootstrap 4 JQuery, Parallax and Hover.
 ## Use case scenarios
 A fan of the artist can get the information about who the artist is, download their music, read the latest tour dates and subscribe to the newsletter. 
 There is also links to official social media platforms. The web site is will give the audience an overall sense and feel of what the artist is about and what style of music they create.
-Puchasing music – functionality could be developed to allow users to purchase music from the artist by redirecting users to other music content services such as Bandcamp or Soundcloud.
+Purchasing music – functionality could be developed to allow users to purchase music from the artist by redirecting users to other music content services such as Bandcamp or Soundcloud.
 
 ## Testing
 Testing was carried out on the latest versions of Chrome, Firefox and Edge. Responsive Android and iOS testing was performed on Chrome, Firefox, FireFox Focus and Safari.
@@ -38,7 +38,7 @@ Parallax scrolling appears to jitter slightly on FireFox and Safari. This is a k
 3) Each menu items background colour changes to #000 once selected. This also happened on hover but was changed to a Hover.js effect because hovering to #000 near an item that was already #000 may confuse the user experience.
 
 #### Contact form:
-The Contact form is present for cosmetic purposesnon and is non-functional.
+The Contact form is present for cosmetic purposes and is non-functional.
 
 #### Deployment
 The sites was built on the Cloud9 IDE with GitHub used to backup milestones in development. The latest version is hosted on GitHub Pages ans is available here.
