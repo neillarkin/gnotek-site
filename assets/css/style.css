@@ -2,8 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Audiowide::100,200,300,400,500,600,700,800,900');
 
-/*@import url('https://fonts.googleapis.com/css?family=Frijole::100,200,300,400,500,600,700,800,900');*/
 
+
+/***********************************************************************General settings*/
 body {
   zoom: 100%;
   font-family: Montserrat, sans-serif;
@@ -30,23 +31,26 @@ p strong {
   float: left;
 }
 
-#about h1,
-#muzik h1,
-#tour h1,
-#kontact h1 {
-  /*font-family: 'Frijole', cursive;*/
+#about,
+#muzik,
+#tour,
+#kontact,
+h2 {
   letter-spacing: -1px;
   font-weight: bold;
-
+  font-size: 1.75em;
 }
+
 
 h1 {
-  font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  font-size: 0rem;
+  visibility: hidden;
+  display: none;
 }
 
-h1,
+h2,
 h3,
 h4,
 h5,
@@ -59,7 +63,7 @@ p {
   font-weight: 300;
 }
 
-.jumbotron h1 {
+.jumbotron h2 {
   font-family: 'Audiowide', cursive, sans-serif;
   font-size: 5em;
   color: #84979e;
@@ -87,7 +91,6 @@ p {
 
 .parallax-about {
   width: 350px;
-  /*border: 4px solid rgb(25, 243, 180);*/
 }
 
 .parallax-kontact {
@@ -98,28 +101,15 @@ p {
 }
 
 
-.opaque-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 105%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-
-
 /*=============================================================== Navigation*/
 
 header {
   float: right;
-  height: 500vh;
+  height: 700vh;
 }
 
 
 .navbar {
-  /*position: sticky;*/
-  /*top: 0px;*/
   display: block;
   z-index: 3;
   background-color: #ff6262 !important;
@@ -219,6 +209,11 @@ my-4 {
   color: #fff;
 }
 
+.btn {
+  border-radius: 0;
+}
+
+
 .btn-primary a {
   color: #fff;
   background-color: #61c0d6;
@@ -229,7 +224,6 @@ my-4 {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
-  /*border: solid 1px #fff;*/
 }
 
 
@@ -241,6 +235,7 @@ my-4 {
   color: #000;
   background-color: rgba(0, 0, 0, 0.5);
   min-height: 100vh;
+  min-height: 100vw;
 }
 
 /*--------------------------------------------------------Muzik page*/
@@ -313,7 +308,7 @@ form {
 }
 
 .social {
-  min-width: 250px;
+  min-width: 150%;
   padding: 40px 0px 0px 40px;
   margin: 40px 0px 0px 00px;
 }
@@ -333,11 +328,9 @@ footer p {
 /*-------------------------------------Media Queries*/
 
 @media(max-width: 575px) {
-
   header {
     float: none;
     margin: 0px;
-    height: auto;
   }
 
   .navbar {
@@ -348,18 +341,12 @@ footer p {
     margin-right: 15px;
     z-index: 10;
     box-shadow: none;
-    /*0px 0px 0 transparent,*/
-    /*0px 0px 0 #FFC107,*/
-    /*0px 0px 0 #607D8B;*/
   }
 
   .navbar .navbar-nav .nav-item {
     width: 140px;
   }
 
-  .navbar-brand {
-    /*display: none;*/
-  }
   .navbar-toggler-icon {
     margin-left: -10px;
     background-size: 125% 125%;
@@ -373,25 +360,23 @@ footer p {
     height: auto;
   }
 
-  .jumbotron h1 {
+  .jumbotron h2 {
     font-size: 4em;
   }
 
-  .btn-group-lg>.btn,
-  .btn-lg {
-    border-radius: 0;
-  }
-
-
-  .jumbotron.btn.btn-primary.btn-lg {
-    border-radius: 0;
-  }
 
   #about,
   #muzik,
   #tour,
   #kontact {
     margin-left: 0px;
+  }
+
+  table {
+    font-weight: normal;
+    font-size: .75em;
+    letter-spacing: 0px;
+    box-shadow: 3px 3px 3px #999;
   }
 
   #kontact {
@@ -441,7 +426,6 @@ footer p {
     float: left;
   }
   #muzik img {
-    /*margin-top: 50px;*/
     margin-bottom: 90px;
   }
 
